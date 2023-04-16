@@ -1,0 +1,62 @@
+SQL Queries:
+
+Query for user_table:
+CREATE  TABLE `user_table` (
+  `email` VARCHAR(100) NOT NULL ,
+  `user_name` VARCHAR(45) NOT NULL ,
+  `password` VARCHAR(45) NOT NULL ,
+  PRIMARY KEY (`email`) );
+
+Query for admin_table:
+CREATE  TABLE `admin_table` (
+  `email` VARCHAR(100) NOT NULL ,
+  `admin_name` VARCHAR(45) NOT NULL ,
+  `password` VARCHAR(45) NOT NULL ,
+  PRIMARY KEY (`email`) );
+
+Query for book_table:
+CREATE  TABLE `book_table` (
+  `book_id` INT NOT NULL  AUTO_INCREMENT ,
+  `book_title` VARCHAR(45) NOT NULL ,
+  `book_genres` VARCHAR(45) NULL ,
+  `author_name` VARCHAR(45) NULL ,
+  `publication_name` VARCHAR(100) NULL ,
+  `book_price` INT NULL ,
+PRIMARY KEY (`book_id`) );
+
+
+Query for user_loved_books:
+CREATE TABLE user_loved_books (
+email varchar(255) not null,
+book_id integer not null,
+FOREIGN KEY(email) REFERENCES user_table(email),
+FOREIGN KEY (book_id) REFERENCES book_table(book_id)
+);
+
+
+Query for user_read_later_books:
+CREATE TABLE user_read_later_books (
+email varchar(255) not null,
+book_id integer not null,
+FOREIGN KEY(email) REFERENCES user_table(email),
+FOREIGN KEY (book_id) REFERENCES book_table(book_id)
+);
+
+
+Query for admin_loved_books:
+CREATE TABLE admin_loved_books (
+email varchar(255) not null,
+book_id integer not null,
+FOREIGN KEY(email) REFERENCES user_table(email),
+FOREIGN KEY (book_id) REFERENCES book_table(book_id)
+);
+
+
+Query for admin_read_later_books:
+CREATE TABLE admin_read_later_books (
+email varchar(255) not null,
+book_id integer not null,
+FOREIGN KEY(email) REFERENCES user_table(email),
+FOREIGN KEY (book_id) REFERENCES book_table(book_id)
+);
+

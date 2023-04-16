@@ -1,0 +1,876 @@
+{
+  "version": 6,
+  "entities": [
+    {
+      "entity": {
+        "type": "Project",
+        "id": "27640610-150f-4dbd-9929-bd9e0552ac24",
+        "name": "MagicOfBooks"
+      },
+      "children": [
+        {
+          "entity": {
+            "type": "Request",
+            "method": {
+              "requestBody": true,
+              "link": "http://tools.ietf.org/html/rfc7231#section-4.3.4",
+              "name": "PUT"
+            },
+            "body": {
+              "formBody": {
+                "overrideContentType": true,
+                "encoding": "application/x-www-form-urlencoded",
+                "items": []
+              },
+              "bodyType": "Text",
+              "textBody": ""
+            },
+            "uri": {
+              "query": {
+                "delimiter": "&",
+                "items": []
+              },
+              "scheme": {
+                "name": "http",
+                "version": "V11"
+              },
+              "host": "localhost:8080",
+              "path": "/admins/lovedBooks/4"
+            },
+            "id": "b4ceaf94-2579-4b25-952a-3ead07eeaac5",
+            "name": "Add to LovedBooks by Loggedin Admin",
+            "headers": [
+              {
+                "enabled": true,
+                "name": "Content-Type",
+                "value": "application/json"
+              }
+            ]
+          }
+        },
+        {
+          "entity": {
+            "type": "Request",
+            "method": {
+              "requestBody": true,
+              "link": "http://tools.ietf.org/html/rfc7231#section-4.3.4",
+              "name": "PUT"
+            },
+            "body": {
+              "formBody": {
+                "overrideContentType": true,
+                "encoding": "application/x-www-form-urlencoded",
+                "items": []
+              },
+              "bodyType": "Text",
+              "textBody": ""
+            },
+            "uri": {
+              "query": {
+                "delimiter": "&",
+                "items": []
+              },
+              "scheme": {
+                "name": "http",
+                "version": "V11"
+              },
+              "host": "localhost:8080",
+              "path": "/users/lovedBooks/4"
+            },
+            "id": "253a1822-14c6-4186-aec1-76f994f1f67c",
+            "name": "Add to LovedBooks by Loggedin User",
+            "headers": [
+              {
+                "enabled": true,
+                "name": "Content-Type",
+                "value": "application/json"
+              }
+            ]
+          }
+        },
+        {
+          "entity": {
+            "type": "Request",
+            "method": {
+              "requestBody": true,
+              "link": "http://tools.ietf.org/html/rfc7231#section-4.3.4",
+              "name": "PUT"
+            },
+            "body": {
+              "formBody": {
+                "overrideContentType": true,
+                "encoding": "application/x-www-form-urlencoded",
+                "items": []
+              },
+              "bodyType": "Text",
+              "textBody": ""
+            },
+            "uri": {
+              "query": {
+                "delimiter": "&",
+                "items": []
+              },
+              "scheme": {
+                "name": "http",
+                "version": "V11"
+              },
+              "host": "localhost:8080",
+              "path": "/admins/readLaterBooks/7"
+            },
+            "id": "525213ae-00d2-4fd3-abbc-468e8a46bd8a",
+            "name": "Add to Read later books by Loggedin Admin",
+            "headers": [
+              {
+                "enabled": true,
+                "name": "Content-Type",
+                "value": "application/json"
+              }
+            ]
+          }
+        },
+        {
+          "entity": {
+            "type": "Request",
+            "method": {
+              "requestBody": true,
+              "link": "http://tools.ietf.org/html/rfc7231#section-4.3.4",
+              "name": "PUT"
+            },
+            "body": {
+              "formBody": {
+                "overrideContentType": true,
+                "encoding": "application/x-www-form-urlencoded",
+                "items": []
+              },
+              "bodyType": "Text",
+              "textBody": ""
+            },
+            "uri": {
+              "query": {
+                "delimiter": "&",
+                "items": []
+              },
+              "scheme": {
+                "name": "http",
+                "version": "V11"
+              },
+              "host": "localhost:8080",
+              "path": "/users/readLaterBooks/7"
+            },
+            "id": "e9cdf8cd-fa7d-4627-844a-0b76f8fd7ea8",
+            "name": "Add to Read later books by Loggedin User",
+            "headers": [
+              {
+                "enabled": true,
+                "name": "Content-Type",
+                "value": "application/json"
+              }
+            ]
+          }
+        },
+        {
+          "entity": {
+            "type": "Request",
+            "method": {
+              "requestBody": true,
+              "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+              "name": "POST"
+            },
+            "body": {
+              "formBody": {
+                "overrideContentType": true,
+                "encoding": "application/x-www-form-urlencoded",
+                "items": []
+              },
+              "bodyType": "Text",
+              "textBody": "{\"email\": \"admin@admin.com\",\n\"password\": \"admin\"\n}"
+            },
+            "uri": {
+              "query": {
+                "delimiter": "&",
+                "items": []
+              },
+              "scheme": {
+                "name": "http",
+                "version": "V11"
+              },
+              "host": "localhost:8080",
+              "path": "/admins/login"
+            },
+            "id": "ed3b78e9-2cb8-49fc-a30a-52d582e3fd9a",
+            "name": "Admin Login",
+            "headers": [
+              {
+                "enabled": true,
+                "name": "Content-Type",
+                "value": "application/json"
+              }
+            ]
+          }
+        },
+        {
+          "entity": {
+            "type": "Request",
+            "method": {
+              "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+              "name": "GET"
+            },
+            "body": {
+              "formBody": {
+                "overrideContentType": true,
+                "encoding": "application/x-www-form-urlencoded",
+                "items": []
+              },
+              "bodyType": "Text",
+              "textBody": "{\"email\": \"agnibha@gmail.com\",\n\"password\": \"ag\"\n}"
+            },
+            "uri": {
+              "query": {
+                "delimiter": "&",
+                "items": []
+              },
+              "scheme": {
+                "name": "http",
+                "version": "V11"
+              },
+              "host": "localhost:8080",
+              "path": "/admins/logout"
+            },
+            "id": "9980e59e-2a1a-4adb-906d-650104804538",
+            "name": "Admin Logout",
+            "headers": []
+          }
+        },
+        {
+          "entity": {
+            "type": "Request",
+            "method": {
+              "link": "http://tools.ietf.org/html/rfc7231#section-4.3.5",
+              "name": "DELETE"
+            },
+            "body": {
+              "formBody": {
+                "overrideContentType": true,
+                "encoding": "application/x-www-form-urlencoded",
+                "items": []
+              },
+              "bodyType": "Text",
+              "textBody": "{\n\"bookId\": 12,\n\"bookTitle\": \"Feluda Somogro part 4\",\n\"bookGenres\": \"Detective\",\n\"authorName\": \"Sri Satyajit Ray\",\n\"publicationName\": \"Anondo publishers\",\n\"price\": 800\n}"
+            },
+            "uri": {
+              "query": {
+                "delimiter": "&",
+                "items": []
+              },
+              "scheme": {
+                "name": "http",
+                "version": "V11"
+              },
+              "host": "localhost:8080",
+              "path": "/books/18"
+            },
+            "id": "f3ccb598-1488-4db8-a39f-26131e4f76ae",
+            "name": "Delete Book",
+            "headers": []
+          }
+        },
+        {
+          "entity": {
+            "type": "Request",
+            "method": {
+              "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+              "name": "GET"
+            },
+            "body": {
+              "formBody": {
+                "overrideContentType": true,
+                "encoding": "application/x-www-form-urlencoded",
+                "items": []
+              },
+              "bodyType": "Text",
+              "textBody": "{\n\"bookId\": 12,\n\"bookTitle\": \"Feluda Somogro part 4\",\n\"bookGenres\": \"Detective\",\n\"authorName\": \"Sri Satyajit Ray\",\n\"publicationName\": \"Anondo publishers\",\n\"price\": 800\n}"
+            },
+            "uri": {
+              "query": {
+                "delimiter": "&",
+                "items": []
+              },
+              "scheme": {
+                "name": "http",
+                "version": "V11"
+              },
+              "host": "localhost:8080",
+              "path": "/books/"
+            },
+            "id": "c2530da4-e931-4b30-89e0-9919026cde76",
+            "name": "Get All Book",
+            "headers": []
+          }
+        },
+        {
+          "entity": {
+            "type": "Request",
+            "method": {
+              "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+              "name": "GET"
+            },
+            "body": {
+              "formBody": {
+                "overrideContentType": true,
+                "encoding": "application/x-www-form-urlencoded",
+                "items": []
+              },
+              "bodyType": "Text",
+              "textBody": "{\n\"bookId\": 12,\n\"bookTitle\": \"Feluda Somogro part 4\",\n\"bookGenres\": \"Detective\",\n\"authorName\": \"Sri Satyajit Ray\",\n\"publicationName\": \"Anondo publishers\",\n\"price\": 800\n}"
+            },
+            "uri": {
+              "query": {
+                "delimiter": "&",
+                "items": []
+              },
+              "scheme": {
+                "name": "http",
+                "version": "V11"
+              },
+              "host": "localhost:8080",
+              "path": "/books/PriceSorted"
+            },
+            "id": "2e492f68-b3ae-4e25-92fa-957b9e2b7d8f",
+            "name": "Get All Books sorted by price Asc",
+            "headers": []
+          }
+        },
+        {
+          "entity": {
+            "type": "Request",
+            "method": {
+              "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+              "name": "GET"
+            },
+            "body": {
+              "formBody": {
+                "overrideContentType": true,
+                "encoding": "application/x-www-form-urlencoded",
+                "items": []
+              },
+              "bodyType": "Text",
+              "textBody": "{\n\"bookId\": 12,\n\"bookTitle\": \"Feluda Somogro part 4\",\n\"bookGenres\": \"Detective\",\n\"authorName\": \"Sri Satyajit Ray\",\n\"publicationName\": \"Anondo publishers\",\n\"price\": 800\n}"
+            },
+            "uri": {
+              "query": {
+                "delimiter": "&",
+                "items": []
+              },
+              "scheme": {
+                "name": "http",
+                "version": "V11"
+              },
+              "host": "localhost:8080",
+              "path": "/books/10"
+            },
+            "id": "1c14014e-58bc-40d4-9c13-3a6de77d1256",
+            "name": "Get Book By Id",
+            "headers": []
+          }
+        },
+        {
+          "entity": {
+            "type": "Request",
+            "method": {
+              "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+              "name": "GET"
+            },
+            "body": {
+              "formBody": {
+                "overrideContentType": true,
+                "encoding": "application/x-www-form-urlencoded",
+                "items": []
+              },
+              "bodyType": "Text",
+              "textBody": "{\n\"bookId\": 12,\n\"bookTitle\": \"Feluda Somogro part 4\",\n\"bookGenres\": \"Detective\",\n\"authorName\": \"Sri Satyajit Ray\",\n\"publicationName\": \"Anondo publishers\",\n\"price\": 800\n}"
+            },
+            "uri": {
+              "query": {
+                "delimiter": "&",
+                "items": []
+              },
+              "scheme": {
+                "name": "http",
+                "version": "V11"
+              },
+              "host": "localhost:8080",
+              "path": "/books/author/John Green"
+            },
+            "id": "b08b49fa-5ee6-47c2-bfd0-e0afbd638321",
+            "name": "Get Books by Author",
+            "headers": []
+          }
+        },
+        {
+          "entity": {
+            "type": "Request",
+            "method": {
+              "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+              "name": "GET"
+            },
+            "body": {
+              "formBody": {
+                "overrideContentType": true,
+                "encoding": "application/x-www-form-urlencoded",
+                "items": []
+              },
+              "bodyType": "Text",
+              "textBody": "{\n\"bookId\": 12,\n\"bookTitle\": \"Feluda Somogro part 4\",\n\"bookGenres\": \"Detective\",\n\"authorName\": \"Sri Satyajit Ray\",\n\"publicationName\": \"Anondo publishers\",\n\"price\": 800\n}"
+            },
+            "uri": {
+              "query": {
+                "delimiter": "&",
+                "items": []
+              },
+              "scheme": {
+                "name": "http",
+                "version": "V11"
+              },
+              "host": "localhost:8080",
+              "path": "/books/pricesorted/200/100000"
+            },
+            "id": "9a4c679d-8307-4311-8a19-2ffb9286c4b9",
+            "name": "Get Books by PriceRange",
+            "headers": []
+          }
+        },
+        {
+          "entity": {
+            "type": "Request",
+            "method": {
+              "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+              "name": "GET"
+            },
+            "body": {
+              "formBody": {
+                "overrideContentType": true,
+                "encoding": "application/x-www-form-urlencoded",
+                "items": []
+              },
+              "bodyType": "Text",
+              "textBody": "{\n\"bookId\": 12,\n\"bookTitle\": \"Feluda Somogro part 4\",\n\"bookGenres\": \"Detective\",\n\"authorName\": \"Sri Satyajit Ray\",\n\"publicationName\": \"Anondo publishers\",\n\"price\": 800\n}"
+            },
+            "uri": {
+              "query": {
+                "delimiter": "&",
+                "items": []
+              },
+              "scheme": {
+                "name": "http",
+                "version": "V11"
+              },
+              "host": "localhost:8080",
+              "path": "/books/publication/Anondo publishers"
+            },
+            "id": "994df09d-dfda-441d-839b-31c1af0c3794",
+            "name": "Get Books by Publication",
+            "headers": []
+          }
+        },
+        {
+          "entity": {
+            "type": "Request",
+            "method": {
+              "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+              "name": "GET"
+            },
+            "body": {
+              "formBody": {
+                "overrideContentType": true,
+                "encoding": "application/x-www-form-urlencoded",
+                "items": []
+              },
+              "bodyType": "Text",
+              "textBody": "{\n\"bookId\": 12,\n\"bookTitle\": \"Feluda Somogro part 4\",\n\"bookGenres\": \"Detective\",\n\"authorName\": \"Sri Satyajit Ray\",\n\"publicationName\": \"Anondo publishers\",\n\"price\": 800\n}"
+            },
+            "uri": {
+              "query": {
+                "delimiter": "&",
+                "items": []
+              },
+              "scheme": {
+                "name": "http",
+                "version": "V11"
+              },
+              "host": "localhost:8080",
+              "path": "/books/bookTitle/The Fault In Our Stars"
+            },
+            "id": "e208adb9-9fc6-4db9-a337-fabae8ce2883",
+            "name": "Get Books by Title",
+            "headers": []
+          }
+        },
+        {
+          "entity": {
+            "type": "Request",
+            "method": {
+              "requestBody": true,
+              "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+              "name": "POST"
+            },
+            "body": {
+              "formBody": {
+                "overrideContentType": true,
+                "encoding": "application/x-www-form-urlencoded",
+                "items": []
+              },
+              "bodyType": "Text",
+              "textBody": "{\n\"bookTitle\": \"Feluda Somogro Part 10\",\n\"bookGenres\": \"Detective Novel\",\n\"authorName\": \"Sri Satyajit Ray\",\n\"publicationName\": \"Anondo Publishers\",\n\"price\": 825\n}"
+            },
+            "uri": {
+              "query": {
+                "delimiter": "&",
+                "items": []
+              },
+              "scheme": {
+                "name": "http",
+                "version": "V11"
+              },
+              "host": "localhost:8080",
+              "path": "/books/"
+            },
+            "id": "b0140374-5707-4792-a180-84d4396436a8",
+            "name": "Insert Book",
+            "headers": [
+              {
+                "enabled": true,
+                "name": "Content-Type",
+                "value": "application/json"
+              }
+            ]
+          }
+        },
+        {
+          "entity": {
+            "type": "Request",
+            "method": {
+              "requestBody": true,
+              "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+              "name": "POST"
+            },
+            "body": {
+              "formBody": {
+                "overrideContentType": true,
+                "encoding": "application/x-www-form-urlencoded",
+                "items": []
+              },
+              "bodyType": "Text",
+              "textBody": "{\"email\":\"agnibha@admin.com\",\n \"password\":\"ag\",\n \"userName\":\"Agnibha Bhattacharjee\"\n}"
+            },
+            "uri": {
+              "query": {
+                "delimiter": "&",
+                "items": []
+              },
+              "scheme": {
+                "name": "http",
+                "version": "V11"
+              },
+              "host": "localhost:8080",
+              "path": "/admins/register"
+            },
+            "id": "82969c7a-2f12-4ca3-844d-2676534a0e9c",
+            "name": "New Admin Registration",
+            "headers": [
+              {
+                "enabled": true,
+                "name": "Content-Type",
+                "value": "application/json"
+              }
+            ]
+          }
+        },
+        {
+          "entity": {
+            "type": "Request",
+            "method": {
+              "requestBody": true,
+              "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+              "name": "POST"
+            },
+            "body": {
+              "formBody": {
+                "overrideContentType": true,
+                "encoding": "application/x-www-form-urlencoded",
+                "items": []
+              },
+              "bodyType": "Text",
+              "textBody": "{\"email\":\"shyam@gmail.com\",\n \"password\":\"Shyam\",\n \"userName\":\"Shyam Kumar\"\n}"
+            },
+            "uri": {
+              "query": {
+                "delimiter": "&",
+                "items": []
+              },
+              "scheme": {
+                "name": "http",
+                "version": "V11"
+              },
+              "host": "localhost:8080",
+              "path": "/users/register"
+            },
+            "id": "3403e4a4-0c0d-4576-a52c-65916e228548",
+            "name": "New User Registration",
+            "headers": [
+              {
+                "enabled": true,
+                "name": "Content-Type",
+                "value": "application/json"
+              }
+            ]
+          }
+        },
+        {
+          "entity": {
+            "type": "Request",
+            "method": {
+              "requestBody": true,
+              "link": "http://tools.ietf.org/html/rfc7231#section-4.3.4",
+              "name": "PUT"
+            },
+            "body": {
+              "formBody": {
+                "overrideContentType": true,
+                "encoding": "application/x-www-form-urlencoded",
+                "items": []
+              },
+              "bodyType": "Text",
+              "textBody": "{\n\"bookId\": 17,\n\"bookTitle\": \"Feluda Somogro part 9\",\n\"bookGenres\": \"Detective\",\n\"authorName\": \"Sri Satyajit Ray\",\n\"publicationName\": \"Anondo publishers\",\n\"price\": 827\n}"
+            },
+            "uri": {
+              "query": {
+                "delimiter": "&",
+                "items": []
+              },
+              "scheme": {
+                "name": "http",
+                "version": "V11"
+              },
+              "host": "localhost:8080",
+              "path": "/books/"
+            },
+            "id": "1ab2eae1-f0aa-470b-82cd-d55eba4db132",
+            "name": "Update Book",
+            "headers": [
+              {
+                "enabled": true,
+                "name": "Content-Type",
+                "value": "application/json"
+              }
+            ]
+          }
+        },
+        {
+          "entity": {
+            "type": "Request",
+            "method": {
+              "requestBody": true,
+              "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+              "name": "POST"
+            },
+            "body": {
+              "formBody": {
+                "overrideContentType": true,
+                "encoding": "application/x-www-form-urlencoded",
+                "items": []
+              },
+              "bodyType": "Text",
+              "textBody": "{\"email\": \"agnibha@gmail.com\",\n\"password\": \"ag\"\n}"
+            },
+            "uri": {
+              "query": {
+                "delimiter": "&",
+                "items": []
+              },
+              "scheme": {
+                "name": "http",
+                "version": "V11"
+              },
+              "host": "localhost:8080",
+              "path": "/users/login"
+            },
+            "id": "cd3c2d52-9c9b-482d-93bb-bc6222fb7689",
+            "name": "User Login",
+            "headers": [
+              {
+                "enabled": true,
+                "name": "Content-Type",
+                "value": "application/json"
+              }
+            ]
+          }
+        },
+        {
+          "entity": {
+            "type": "Request",
+            "method": {
+              "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+              "name": "GET"
+            },
+            "body": {
+              "formBody": {
+                "overrideContentType": true,
+                "encoding": "application/x-www-form-urlencoded",
+                "items": []
+              },
+              "bodyType": "Text",
+              "textBody": "{\"email\": \"agnibha@gmail.com\",\n\"password\": \"ag\"\n}"
+            },
+            "uri": {
+              "query": {
+                "delimiter": "&",
+                "items": []
+              },
+              "scheme": {
+                "name": "http",
+                "version": "V11"
+              },
+              "host": "localhost:8080",
+              "path": "/users/logout"
+            },
+            "id": "d6076195-816b-493b-8e62-4de3fdebb8f1",
+            "name": "User Logout",
+            "headers": []
+          }
+        },
+        {
+          "entity": {
+            "type": "Request",
+            "method": {
+              "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+              "name": "GET"
+            },
+            "body": {
+              "formBody": {
+                "overrideContentType": true,
+                "encoding": "application/x-www-form-urlencoded",
+                "items": []
+              },
+              "bodyType": "Text",
+              "textBody": ""
+            },
+            "uri": {
+              "query": {
+                "delimiter": "&",
+                "items": []
+              },
+              "scheme": {
+                "name": "http",
+                "version": "V11"
+              },
+              "host": "localhost:8080",
+              "path": "/admins/lovedBooks"
+            },
+            "id": "2c4d7d58-1b95-498c-8cbd-a912da1c8b9e",
+            "name": "View the LovedBooks for Loggedin Admin",
+            "headers": []
+          }
+        },
+        {
+          "entity": {
+            "type": "Request",
+            "method": {
+              "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+              "name": "GET"
+            },
+            "body": {
+              "formBody": {
+                "overrideContentType": true,
+                "encoding": "application/x-www-form-urlencoded",
+                "items": []
+              },
+              "bodyType": "Text",
+              "textBody": ""
+            },
+            "uri": {
+              "query": {
+                "delimiter": "&",
+                "items": []
+              },
+              "scheme": {
+                "name": "http",
+                "version": "V11"
+              },
+              "host": "localhost:8080",
+              "path": "/users/lovedBooks"
+            },
+            "id": "f904d7b6-2f9a-4246-8b39-329a454638fc",
+            "name": "View the LovedBooks for Loggedin User",
+            "headers": []
+          }
+        },
+        {
+          "entity": {
+            "type": "Request",
+            "method": {
+              "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+              "name": "GET"
+            },
+            "body": {
+              "formBody": {
+                "overrideContentType": true,
+                "encoding": "application/x-www-form-urlencoded",
+                "items": []
+              },
+              "bodyType": "Text",
+              "textBody": ""
+            },
+            "uri": {
+              "query": {
+                "delimiter": "&",
+                "items": []
+              },
+              "scheme": {
+                "name": "http",
+                "version": "V11"
+              },
+              "host": "localhost:8080",
+              "path": "/admins/readLaterBooks"
+            },
+            "id": "dc2527a5-59f9-4dd9-87b2-112706a326dd",
+            "name": "View the Read later books for Loggedin Admin",
+            "headers": []
+          }
+        },
+        {
+          "entity": {
+            "type": "Request",
+            "method": {
+              "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+              "name": "GET"
+            },
+            "body": {
+              "formBody": {
+                "overrideContentType": true,
+                "encoding": "application/x-www-form-urlencoded",
+                "items": []
+              },
+              "bodyType": "Text",
+              "textBody": ""
+            },
+            "uri": {
+              "query": {
+                "delimiter": "&",
+                "items": []
+              },
+              "scheme": {
+                "name": "http",
+                "version": "V11"
+              },
+              "host": "localhost:8080",
+              "path": "/users/readLaterBooks"
+            },
+            "id": "60c5474c-d049-47a5-8a59-265d2e7e1ec7",
+            "name": "View the Read later books for Loggedin User",
+            "headers": []
+          }
+        }
+      ]
+    }
+  ]
+}
